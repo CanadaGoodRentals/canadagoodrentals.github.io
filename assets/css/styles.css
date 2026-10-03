@@ -76,7 +76,27 @@ section{padding:88px 0}
 .facts-list b{font-family:var(--head);font-size:1rem}
 .facts-list span{font-size:.92rem;color:#D9F3EE}
 
+/* proof strip */
+.proof{background:var(--green);color:#fff;padding:36px 0}
+.proof-inner{margin:0 auto;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 28px}
+.proof blockquote{margin:0;flex:1 1 520px}
+.proof blockquote p{margin:0;font-family:var(--head);font-weight:600;font-size:clamp(1.1rem,2vw,1.35rem);line-height:1.4}
+.proof figcaption{color:var(--mint);font-size:.95rem}
+
+/* help */
+.help-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.help-grid svg{width:40px;height:40px;fill:none;stroke:var(--teal);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
+.help-grid p{color:var(--muted);margin:0}
+
+/* fees */
+.fees{border-top:1px solid var(--line);margin-top:8px}
+.fees summary{cursor:pointer;font-family:var(--head);font-weight:600;color:var(--green);padding:16px 0;list-style:none}
+.fees summary::-webkit-details-marker{display:none}
+.fees summary::after{content:" +";}
+.fees[open] summary::after{content:" −"}
+
 /* fit */
+.fit{background:var(--mist)}
 .fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
 .fit-intro p{color:var(--muted);max-width:32em}
 .fit-img{width:min(320px,80%);margin-top:16px}
@@ -97,13 +117,17 @@ section{padding:88px 0}
 .steps li::before{content:counter(step);position:absolute;top:0;left:0;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-family:var(--head);font-weight:800;font-size:1.1rem;background:#fff;color:var(--green);border:2px solid var(--teal);transition:background-color .35s,color .35s,transform .35s}
 .steps li::after{content:"";position:absolute;top:22px;left:58px;right:-20px;height:2px;background:var(--line)}
 .steps li:nth-child(3n)::after{display:none}
+.steps-4{grid-template-columns:repeat(4,1fr)}
+.steps-4 li:nth-child(3n)::after{display:block}
+.steps-4 li:last-child::after{display:none}
 .steps li.on::before{background:var(--green);color:#fff;border-color:var(--green);transform:scale(1.06)}
 .steps p{color:var(--muted);margin:0;max-width:30em}
 
 /* pricing */
 .pricing-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
 .price-card{border:2px solid var(--green);border-radius:var(--radius);padding:34px;position:relative}
-.price{font-family:var(--head);font-weight:800;font-size:3.2rem;color:var(--green);line-height:1;margin:0 0 20px}
+.price{font-family:var(--head);font-weight:800;font-size:3.2rem;color:var(--green);line-height:1;margin:0 0 12px}
+.price-sub{color:var(--muted);margin-bottom:22px}
 .price span{font-size:1.1rem;vertical-align:super;margin-right:4px}
 .included{list-style:none;padding:0;margin:0 0 22px}
 .included li{padding:.45em 0 .45em 28px;position:relative;border-bottom:1px solid var(--line)}
@@ -176,15 +200,16 @@ section{padding:88px 0}
   .hero-grid,.fit-grid,.pricing-grid,.about-grid,.quotes{grid-template-columns:1fr}
   .photo-wrap,.hero-photo figcaption{margin-left:0}
   .facts-list{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:1fr 1fr}
-  .steps li::after{display:none}
+  .steps,.steps-4{grid-template-columns:1fr 1fr}
+  .help-grid{grid-template-columns:1fr 1fr}
+  .steps li::after{display:none!important}
   .landlord-inner{flex-direction:column;align-items:flex-start}
   .footer-grid{grid-template-columns:1fr}
 }
 @media (max-width:600px){
   section{padding:64px 0}
   .hero{padding:48px 0 110px}
-  .steps,.facts-list{grid-template-columns:1fr}
+  .steps,.steps-4,.facts-list,.help-grid{grid-template-columns:1fr}
   .price-card{padding:26px}
 }
 @media (prefers-reduced-motion:reduce){
