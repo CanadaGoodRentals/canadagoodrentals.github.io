@@ -219,6 +219,13 @@ section{padding:88px 0}
 .area-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center}
 .area p{color:var(--muted)}
 
+.text-link{font-family:var(--head);font-weight:700;color:var(--green);text-decoration:none;border-bottom:2px solid var(--teal)}
+.text-link:hover{color:var(--forest)}
+.landlord-card .more{margin:16px 0 0}.landlord-card .more a{color:#fff;font-weight:700}
+.more-dark{margin-top:24px}
+.about.page-hero h1{font-size:clamp(1.9rem,3.6vw,2.6rem)}
+.about.page-hero p{color:var(--muted)}
+
 /* faq */
 .faq-wrap{max-width:820px}
 .faq details{border-bottom:1px solid var(--line)}
