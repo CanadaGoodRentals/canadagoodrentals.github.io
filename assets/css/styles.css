@@ -225,6 +225,15 @@ section{padding:88px 0}
 .langs-img{width:100%;max-width:260px;justify-self:center}
 .langs p{color:var(--muted);max-width:36em}
 
+.legal a{color:#CFE9E4}
+.legal-text h2{font-size:1.25rem;margin-top:32px}
+.legal-text p{color:var(--muted)}
+
+/* 404 */
+.notfound{position:relative;background:var(--mist);min-height:calc(100vh - 78px);padding:80px 0 160px;overflow:hidden}
+.nf-code{font-family:var(--head);font-weight:800;font-size:5rem;color:var(--teal);line-height:1;margin:0 0 12px}
+.notfound p{color:var(--muted);max-width:38em}
+
 /* map */
 .area{border-top:1px solid var(--line)}
 .map{width:100%;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
