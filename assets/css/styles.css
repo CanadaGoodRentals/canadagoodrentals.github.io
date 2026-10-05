@@ -212,6 +212,13 @@ section{padding:88px 0}
 .docs-list li{background:#fff;border-radius:var(--radius);padding:22px 24px;border:1px solid var(--line)}
 .docs-list p{color:var(--muted);margin:0}
 
+/* example */
+.example{background:var(--mist);border-radius:10px;padding:14px 16px;margin:-12px 0 26px}
+.example-title{font-family:var(--head);font-weight:700;color:var(--forest);margin:0 0 6px;font-size:.95rem}
+.example table{width:100%;border-collapse:collapse;font-size:.95rem}
+.example th{text-align:left;font-weight:400;color:var(--muted);padding:4px 0}
+.example td{text-align:right;font-weight:700;color:var(--forest)}
+
 /* map */
 .area{border-top:1px solid var(--line)}
 .map{width:100%;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
