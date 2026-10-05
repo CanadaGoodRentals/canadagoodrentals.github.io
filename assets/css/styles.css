@@ -219,6 +219,12 @@ section{padding:88px 0}
 .example th{text-align:left;font-weight:400;color:var(--muted);padding:4px 0}
 .example td{text-align:right;font-weight:700;color:var(--forest)}
 
+/* languages */
+.langs{background:var(--mist);padding:64px 0}
+.langs-grid{display:grid;grid-template-columns:.6fr 1.4fr;gap:48px;align-items:center}
+.langs-img{width:100%;max-width:260px;justify-self:center}
+.langs p{color:var(--muted);max-width:36em}
+
 /* map */
 .area{border-top:1px solid var(--line)}
 .map{width:100%;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
@@ -277,6 +283,8 @@ section{padding:88px 0}
   .why-list{grid-template-columns:1fr}
   .docs-list{grid-template-columns:1fr}
   .area-grid{grid-template-columns:1fr}
+  .langs-grid{grid-template-columns:1fr}
+  .langs-img{max-width:180px}
   .page-hero-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
 }
